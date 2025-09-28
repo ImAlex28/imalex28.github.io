@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width">
+        <title>Portfolio de Alejandro G. | Estudiante de Ingeniería Informática en la UCLM</title>
+        <meta name="description" content="Portfolio de Alejandro. Estudiante de Ingeniería Informática.">
+
+        <!--Open Graph -->
+        <meta property="og:title" content="Portfolio de Alejandro G.">
+        <meta property="og:description" content="Estudiante de Ingeniería Informática en la UCLM">
+        <meta property="og:image" content="images\foto_carnet_uclm.png">
+        <meta property="og:image:alt" content="Una fotografía de Alejandro">
+
+        <link rel="alternate" href="https://codigo3.es" hreflang="en-GB">
+        <link rel="canonical" href="https://codigo3.es">
+
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#09f">
+        <!--<link rel="icon" type="image/png" href="images\foto_carnet_uclm.png">-->
+
+        <style>
+            body{
+                background: #f0f0f0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Portfolio de Alejandro G. 💻</h1>
+            <nav>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#proyectos">Proyectos</a> <!--Enlaces internos-->
+                <a
+                    href="https://github.com/ImAlex28"
+                    target="_blank"
+                    rel="noreferrer"
+                >GitHub</a>
+            </nav>
+        </header>
+        <!--<video autoplay loop muted src="http://media.w3.org/2010/05/sintel/trailer.mp4"></video> -->
+        <dialog id="dialog">
+            <h1>Contactame</h1>
+            <p></p>
+            <button id="hide">Cerrar</button>
+        </dialog>
+        <button id="show">Contáctame</button>
+        <script>
+            window.show.addEventListener('click', ()=> {
+                window.dialog.showModal()
+            })
+            window.hide.addEventListener('click', ()=> {
+                window.dialog.close()
+            })
+        </script>
+
+        <main>
+            <h2>Sobre mi</h2>
+
+            <p>Estudiante del cuarto año de <strong>Ingeniería Informática</strong> en la UCLM.</p>
+
+            <h2 id="experiencia">Experiencia</h2>
+
+            <ul>
+                <li class='list-item'>Aún ninguna ;)</li>
+                <li class='list-item'>Todavía nada</li>
+            </ul>
+
+            <!-- <a download href="images\foto_carnet_uclm.png">
+                <img
+                    id="photo-image"
+                    width=200
+                    height=200
+                    title="Fotografía de Alejandro"
+                    alt="Una fotografía de Alejandro"
+                    src='images\foto_carnet_uclm.png'
+                >
+            </a> -->
+
+
+            <h2 id="proyectos">Proyectos realizados</h2>
+            <aside>
+                <header>
+                    <h3>Mis tecnologías favoritas</h3>
+                </header>
+                <ul>
+                    <li>Next.js</li>
+                    <li>MongoDB</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+                <button>
+                    No hagas click aquí
+                </button>
+            </aside>
+
+            <section>
+                <article>
+                    <header>
+                        <h4>Sitio Web Corporativo</h4>
+                    </header>
+                    <p>
+                        Desarrollo de un sitio web corporativo moderno.
+                    </p>
+                    <img style="width: 100%; aspect-ratio: 1915/901;" loading="lazy" src="images\webpage.png" alt="Captura de pantalla de la web código 3">
+                    <footer>
+                        <small>Teconolgías utilizadas: HTML, Tailwind CSS, Next.js</small>
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <h4>Aplicación E-Commerce</h4>
+                    </header>
+                    <p>
+                        Desarrollo de una aplicación de comercio electrónico.
+                    </p>
+                    <footer>
+                        <small>Teconolgías utilizadas: Razor, C#, HTML, MySQL</small>
+                    </footer>
+                </article>
+            </section>
+
+            <section>
+                <h2>Más sobre mi</h2>
+
+                <details>
+                    <summary>¿Qué estudios tienes?</summary>
+                    <p>Estudio en la universidad de CLM Ingeniería Informática, con la especialidad en Ingeniería del Software</p>
+                </details>
+
+                <details>
+                    <summary>¿Has hecho proyectos voluntarios?</summary>
+                    <p>Sí, actualmente trabajo como voluntario para VATSIM Spain, asistiendo en diversas tareas de la organización.</p>
+                </details>
+
+            </section>
+
+            <!--<section>
+                <h2>Formulario de contacto</h2>
+
+                <form method="post" action="/">
+                    <fieldset>
+                        <legend>Información personal</legend>
+                        <label style="display: block;">
+                            Nombre:
+                            <input type="text" name="name" placeholder="Alejandro Gallegos" required>
+                        </label>
+                        <label style="display: block;">
+                            Correo Electrónico:
+                            <input type="email" name="email" placeholder="Alejandro.Gallegos@alu.uclm.es" required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Información adicional</legend>
+                        <label style="display: block;">
+                            Teléfono:
+                            <input type="tel" name="telefono" placeholder="+34111111111" pattern="[0-9]{9}">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Otros</legend>
+
+                        <div>
+                            <label for="why">¿Por qué quieres contactar?</label>
+                            <select name="why" id="why">
+                                <option value="1">Trabajo</option>
+                                <option value="2">Duda</option>
+                                <option value="3">Más información</option>
+                            </select>
+                        </div>
+                        <div>
+                            <datalist id="languages">
+                                <option value="JavaScript"></option>
+                                <option value="Python"></option>
+                                <option value="Java"></option>
+                                <option value="C#"></option>
+                            </datalist>
+                            <label>
+                                ¿Que lenguaje quieres aprender?
+                                <input list="languages">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="terms">¿Aceptas los términos?</label>
+                            <input type="checkbox" id="terms" name="terms" required>
+                        </div>
+                    </fieldset>
+
+                    <input type="submit" value="Enviar Contacto">
+                </form>
+            </section>
+            <section>
+                <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/3nYLTiY5skU?si=3VnalTI_UmH6r6tp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section> -->
+        </main>
+        <footer>
+            Copyright © 2025 - El portfolio de Alejandro
+            <a href="mailto:alejandro.gallegos@alu.uclm.es">Envíame un email</a>
+        </footer>
+    </body>
+</html>
